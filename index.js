@@ -2,7 +2,7 @@ module.exports = {
     plugins: ['eslint-plugin-prettier'],
     extends: ['eslint:recommended', 'eslint-config-prettier'],
     rules: {
-        'prettier/prettier': ['error', require('prettier-config')],
+        'prettier/prettier': ['error', require('@piotr-placzek/np-shared-prettier-config')],
     },
     ignorePatterns: ['**/node_modules/*', '**/build/*', '**/dist/*'],
     parserOptions: {
